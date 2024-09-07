@@ -1,4 +1,5 @@
 # Project Setup
+This works and is intended for Ubuntu 20.04. Don't @ me.
 
 ## Install Dependencies
 Run the following command to install necessary packages:
