@@ -1,0 +1,49 @@
+# Ignore CMake generated files
+.cmake/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Makefile
+main
+
+# Ignore executables and libraries
+*.exe
+*.out
+*.app
+*.lib
+*.a
+*.la
+*.lo
+*.def
+*.exp
+*.pdb
+*.ilk
+*.dSYM/
+*.stackdump
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.log
+*.swp
+*.swo
+*.bak
+*.old
+
+# Ignore object files
+*.o
+*.obj
+*.gch
+*.pch
+
+# Ignore dependency files
+*.d
+
+# Ignore IDE specific files
+*.idea/
+*.code-workspace
+
+# Ignore other files
+*.DS_Store
+*.directory

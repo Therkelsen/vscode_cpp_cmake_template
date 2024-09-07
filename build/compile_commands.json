@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/therk/vscode_cpp_cmake_template/build",
+  "command": "/usr/bin/c++      -std=gnu++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/therk/vscode_cpp_cmake_template/main.cpp",
+  "file": "/home/therk/vscode_cpp_cmake_template/main.cpp"
+}
+]
