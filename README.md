@@ -32,7 +32,7 @@ Make sure to install the following VS Code extensions:
 ## Add Keybind to Build and Run
 To bind a key to build and run the project, do the following:
 
-1. Press `Ctrl + P` and type `Keyboard Shortcuts JSON` to open the keybindings JSON file.
+1. Press `Ctrl + Shift + P` and type `Keyboard Shortcuts JSON` to open the keybindings JSON file.
 2. Add the following entry, modifying the keybind to your preference (example uses `F5`):
 
 ```
@@ -48,7 +48,7 @@ To bind a key to build and run the project, do the following:
 ## Disable C/C++ IntelliSense in Favor of clangd
 Disable the default IntelliSense and use clangd instead:
 
-1. Press `Ctrl + P` and type `User Settings JSON` to open the user settings JSON file.
+1. Press `Ctrl + Shift + P` and type `User Settings JSON` to open the user settings JSON file.
 2. Add the following entry:
 
 ```
@@ -59,12 +59,21 @@ Disable the default IntelliSense and use clangd instead:
 4. Verify that clangd works by hovering over the `v` vector in the `main.cpp` file. It should show some goodies.
 
 ## Configure CMake
-Setup your project, navigate to the `/build` directory and execute the following commands:
+To setup your project, from your workspace run the following command:
+
+```
+cmake -S . -B build
+```
+
+Then navigate to the `/build` directory and execute the following commands:
 
 ```
 cmake ..
 make
 ```
+
+If prompted, reload the clang configuration. If not, do it manually:
+Hit `Ctrl + Shift + P` and run the `clangd: Restart Language Server` command.
 
 ## Run
 Now, from within your `main.cpp` file, hit the keybind you bound to run the code. The output should show up in the build-in terminal below.
